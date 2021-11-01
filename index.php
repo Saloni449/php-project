@@ -22,33 +22,25 @@ $result = mysqli_query($dbc, $query);
 </head>
 
 <body>
-    <span><a href="index.php">HOME</a></span> &nbsp;&nbsp;
+  
+    <main>
+        <div class="image">
+        <div class="text">
+                <h1><strong> BOOK STORE </strong></h1>
+            </div>
+            <span><a href="index.php">HOME</a></span> &nbsp;&nbsp;
     <span><a href="store.php">ADD TO CART</a></span>&nbsp;&nbsp;
-    <span><a href="checkout.php">CHECKOUT</a></span>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            
-            <th>Price</th>
-            <th>Quantity</th>
-            
+    <!-- <span><a href="checkout.php">CHECKOUT</a></span> -->
 
-        </tr>
-        <?php
-        while ($row = mysqli_fetch_array($result)) {
-        ?> <tr>
-                <td><?php echo $row['name']; ?></td>
-                
-                <td><?php echo $row['price']; ?></td>
-                <td><?php echo $row['quantity']; ?></td>
-                
-            </tr>
+        <img src='img/book.jpg ?>' width="100%" height="80%" >
 
-        <?php   }
-        ?>
+           
+        </div>
 
+    </main>
 
-    </table>
+    
+    
 
 </body>
 
