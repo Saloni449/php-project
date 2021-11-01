@@ -10,7 +10,6 @@ if(!isset($_GET["bid"])){
   }
 else{
     $_SESSION["bid"] =  $_GET["bid"];
-// echo "<br>bookid is set<br>";
 
 $SESSION_ID = intval($_SESSION['bid']);
 // echo $SESSION_ID;
